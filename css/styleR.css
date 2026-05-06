@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #3b1208 0%, #140606 45%, #090303 100%);
+    color: #f7d28b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.glavni {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    background: rgba(20, 8, 8, 0.88);
+    border: 2px solid rgba(255, 196, 80, 0.35);
+    border-radius: 28px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 14px;
+    color: #ffd66b;
+    text-shadow: 0 0 18px rgba(255, 196, 80, 0.35);
+}
+
+.glavni > p {
+    color: #f2d8a3;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.vrstica {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.vrstica > div {
+    width: 280px;
+    border-radius: 24px;
+    padding: 28px 20px;
+    background: linear-gradient(180deg, #1c1c1f 0%, #0d0d10 100%);
+    border: 2px solid rgba(255,255,255,0.08);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.45);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.vrstica > div:hover {
+    transform: translateY(-6px);
+}
+
+.vrstica > div:nth-child(2) {
+    min-height: 420px;
+    border-color: #f5c451;
+    box-shadow: 0 0 30px rgba(245, 196, 81, 0.18);
+}
+
+.vrstica > div:nth-child(1),
+.vrstica > div:nth-child(3) {
+    min-height: 340px;
+}
+
+.vrstica > div:nth-child(1) {
+    border-color: #b9c2d0;
+}
+
+.vrstica > div:nth-child(3) {
+    border-color: #b9773f;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #fff0c8;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.vrstica p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffd98a;
+}
+
+@media (max-width: 900px) {
+    .vrstica {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vrstica > div,
+    .vrstica > div:nth-child(2) {
+        min-height: auto;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}

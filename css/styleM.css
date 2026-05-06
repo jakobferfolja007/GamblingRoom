@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top,#2a0f07 0%,#120504 60%,#070202 100%);
+    padding: 30px;
+    color: #f3d9a2;
+}
+
+.glavni {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(20,8,6,0.95);
+    border-radius: 25px;
+    padding: 50px 60px;
+    box-shadow: 0 0 60px rgba(255,170,60,0.15);
+    text-align: center;
+    border: 1px solid #6b3e1f;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #ffd27a;
+    text-shadow: 0 0 18px rgba(255,180,70,0.45);
+}
+
+.vrstica {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.kartica {
+    background: #1b0e0a;
+    border: 1px solid #5a341a;
+    border-radius: 18px;
+    width: 240px;
+    padding: 25px 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.45);
+}
+
+.kartica h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #ffcf7a;
+}
+
+.kocke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.kocke img {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 6px rgba(255,180,70,0.6));
+}
+
+.kartica p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f1c98a;
+}
+
+.crta {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,transparent,#a87434,transparent);
+    margin: 20px 0 30px;
+}
+
+.stevec-meta {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #ffd27a;
+    text-shadow: 0 0 14px rgba(255,180,70,0.45);
+}
+
+.forma-gumb {
+    width: 100%;
+}
+
+.gumb {
+    width: 20%;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(45deg,#ffcc73,#c08b3c);
+    color: #2b1408;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(255,170,60,0.35);
+}
+
+.gumb:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(255,170,60,0.55);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .kartica {
+        width: 100%;
+    }
+
+    .kartica h2 {
+        font-size: 30px;
+    }
+
+    .kartica p {
+        font-size: 18px;
+    }
+
+    .stevec-meta {
+        font-size: 40px;
+    }
+
+    .gumb {
+        font-size: 24px;
+    }
+}
