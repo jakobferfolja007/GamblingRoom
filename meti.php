@@ -56,7 +56,13 @@ $igralci = [$igralec1, $igralec2, $igralec3];
             for ($i = 0; $i < $st_kock; $i++) {
                 $st = rand(1, 6);
                 $vsota_meta += $st;
-                echo "<img src='img/dice$st.gif' alt='Kocka'>";
+
+                // Kocka je narejena s CSS pikami, zato lahko lepo animira ob vsakem metu.
+                echo "<div class='die rolling' data-v='$st' aria-label='Kocka $st'>";
+                for ($pika = 0; $pika < $st; $pika++) {
+                    echo "<span class='dot'></span>";
+                }
+                echo "</div>";
             }
             echo "</div>";
 
@@ -102,6 +108,12 @@ $igralci = [$igralec1, $igralec2, $igralec3];
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelectorAll('.die.rolling').forEach(die => die.classList.remove('rolling'));
+    }, 650);
+});
+
 function credits() {
      Swal.fire({
                 title: 'Credits',
