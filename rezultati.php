@@ -35,7 +35,7 @@ usort($rezultati, function($a, $b) {
 <div class="glavni">
     <h1 onclick="credits()">Rezultati </h1>
 
-    <p>Vrnitev na začetno stran čez: <span id="timer">15</span>sekund</p>
+    <p>Vrnitev na začetno stran čez: <span id="timer">15</span> sekund</p>
 
     <div class="vrstica">
 
@@ -75,20 +75,20 @@ var countdown = setInterval(function () {
 }, 1000);
 
  function credits(){
-            Swal.fire({
+          Swal.fire({
                 title: 'Credits',
                 html:`Avtor: Jakob Ferfolja<br>
                     Projekt: Kockanje<br>
                 `,
-                costumClass:{
-                        popup: 'izgledSw',
-                        title: 'moj-alert-title',
-                        htmlContainer: 'moj-alert-text',
-                        confirmButton: 'moj-alert-gumb'
-        
-                },
                 icon: 'info',
-                confirmButtonText:'Zapri'
+                confirmButtonText:'Zapri',
+            
+                customClass:{
+                    popup:'moj-alert',
+                    title:'moj-alert-title',
+                    htmlContainer:'moj-alert-text',
+                    confirmButton:'moj-alert-gumb'
+                }
             });
         
     }

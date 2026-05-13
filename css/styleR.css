@@ -109,24 +109,41 @@ h3 {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-.moj-alert-title {
-    color: #ffd66b;
-    text-shadow: 0 0 18px rgba(255, 196, 80, 0.35);
+.moj-alert{
+    background:rgba(20,8,6,0.97) !important;
+    border:1px solid #6b3e1f !important;
+    border-radius:28px !important;
+    color:#f3d9a2 !important;
+    box-shadow:0 0 60px rgba(255,170,60,0.18) !important;
 }
 
-.moj-alert-text {
-    color: #f2d8a3;
-    font-size: 1.05rem;
+.moj-alert-title{
+    color:#ffd27a !important;
+    font-size:32px !important;
+    letter-spacing:2px;
+    text-shadow:0 0 18px rgba(255,180,70,0.45);
 }
 
-.moj-alert-gumb {
-    background: #ffd66b;
-    color: #140606;
-    border-radius: 14px;
-    padding: 10px 25px;
-    font-weight: bold;
+.moj-alert-text{
+    color:#f1c98a !important;
+    font-size:18px !important;
+    line-height:1.8;
 }
 
+.moj-alert-gumb{
+    background:linear-gradient(45deg,#ffcc73,#c08b3c) !important;
+    color:#2b1408 !important;
+    border:none !important;
+    border-radius:16px !important;
+    padding:12px 30px !important;
+    font-size:18px !important;
+    font-weight:bold !important;
+    box-shadow:0 8px 25px rgba(255,170,60,0.35) !important;
+}
+
+.moj-alert-gumb:hover{
+    transform:scale(1.03);
+}
 @media (max-width: 900px) {
     .vrstica {
         flex-direction: column;

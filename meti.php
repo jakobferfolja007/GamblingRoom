@@ -4,6 +4,7 @@ session_start();
 $igralec1 = $_POST['igralec1'] ?? $_SESSION['igralec1'] ?? 'Igralec 1';
 $igralec2 = $_POST['igralec2'] ?? $_SESSION['igralec2'] ?? 'Igralec 2';
 $igralec3 = $_POST['igralec3'] ?? $_SESSION['igralec3'] ?? 'Igralec 3';
+
 $st_kock = $_POST['st_kock'] ?? $_SESSION['st_kock'] ?? 1;
 $st_iger = $_POST['st_iger'] ?? $_SESSION['st_iger'] ?? 1;
 
@@ -45,7 +46,7 @@ $igralci = [$igralec1, $igralec2, $igralec3];
 
     <div class="vrstica">
         <?php
-        foreach ($igralci as $index => $ime) {
+            foreach ($igralci as $index => $ime) {
             echo "<div class='kartica'>";
             echo "<h2>$ime</h2>";
 
@@ -62,8 +63,17 @@ $igralci = [$igralec1, $igralec2, $igralec3];
             $_SESSION['skupne_vsote'][$index] += $vsota_meta;
             $skupaj = $_SESSION['skupne_vsote'][$index];
 
-            echo "<p>Vsota tega meta: $vsota_meta</p>";
-            echo "<p>Skupna vsota vseh metov: $skupaj</p>";
+            echo "<div class='spodaj-stat'>";
+            echo "  <div>";
+            echo "      <span>TA MET</span>";
+            echo "      <strong>$vsota_meta</strong>";
+            echo "  </div>";
+            echo "  <div>";
+            echo "      <span>SKUPAJ</span>";
+            echo "      <strong>$skupaj</strong>";
+            echo "  </div>";
+            echo "</div>";
+
             echo "</div>";
         }
         ?>
@@ -89,19 +99,27 @@ $igralci = [$igralec1, $igralec2, $igralec3];
         <?php } ?>
     </form>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function credits(){
-            Swal.fire({
+<script>
+function credits() {
+     Swal.fire({
                 title: 'Credits',
                 html:`Avtor: Jakob Ferfolja<br>
                     Projekt: Kockanje<br>
                 `,
                 icon: 'info',
-                confirmButtonText:'Zapri'
+                confirmButtonText:'Zapri',
+            
+                customClass:{
+                    popup:'moj-alert',
+                    title:'moj-alert-title',
+                    htmlContainer:'moj-alert-text',
+                    confirmButton:'moj-alert-gumb'
+                }
             });
-        
-    }
-    </script>
+}
+</script>
+
 </body>
 </html>
