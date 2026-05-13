@@ -101,6 +101,32 @@ h3 {
     color: #ffd98a;
 }
 
+.izgledSw{
+    background: rgba(20, 8, 8, 0.95);
+    border: 2px solid rgba(255, 196, 80, 0.45);
+    border-radius: 28px;
+    color: #f7d28b;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.moj-alert-title {
+    color: #ffd66b;
+    text-shadow: 0 0 18px rgba(255, 196, 80, 0.35);
+}
+
+.moj-alert-text {
+    color: #f2d8a3;
+    font-size: 1.05rem;
+}
+
+.moj-alert-gumb {
+    background: #ffd66b;
+    color: #140606;
+    border-radius: 14px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
     .vrstica {
         flex-direction: column;

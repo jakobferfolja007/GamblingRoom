@@ -41,7 +41,7 @@ $igralci = [$igralec1, $igralec2, $igralec3];
 <body>
 
 <div class="glavni">
-    <h1>Vrži svojo srečo</h1>
+    <h1 onclick="credits()">Vrži svojo srečo</h1>
 
     <div class="vrstica">
         <?php
@@ -89,6 +89,19 @@ $igralci = [$igralec1, $igralec2, $igralec3];
         <?php } ?>
     </form>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function credits(){
+            Swal.fire({
+                title: 'Credits',
+                html:`Avtor: Jakob Ferfolja<br>
+                    Projekt: Kockanje<br>
+                `,
+                icon: 'info',
+                confirmButtonText:'Zapri'
+            });
+        
+    }
+    </script>
 </body>
 </html>
