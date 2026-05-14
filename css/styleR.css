@@ -13,6 +13,16 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    overflow: hidden;
+}
+
+#fireworks {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .glavni {
@@ -25,6 +35,8 @@ body {
     padding: 40px 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 2;
 }
 
 h1 {
@@ -32,6 +44,7 @@ h1 {
     margin-bottom: 14px;
     color: #ffd66b;
     text-shadow: 0 0 18px rgba(255, 196, 80, 0.35);
+    cursor: pointer;
 }
 
 .glavni > p {
@@ -101,7 +114,7 @@ h3 {
     color: #ffd98a;
 }
 
-.izgledSw{
+.izgledSw {
     background: rgba(20, 8, 8, 0.95);
     border: 2px solid rgba(255, 196, 80, 0.45);
     border-radius: 28px;
@@ -109,41 +122,42 @@ h3 {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-.moj-alert{
-    background:rgba(20,8,6,0.97) !important;
-    border:1px solid #6b3e1f !important;
-    border-radius:28px !important;
-    color:#f3d9a2 !important;
-    box-shadow:0 0 60px rgba(255,170,60,0.18) !important;
+.moj-alert {
+    background: rgba(20,8,6,0.97) !important;
+    border: 1px solid #6b3e1f !important;
+    border-radius: 28px !important;
+    color: #f3d9a2 !important;
+    box-shadow: 0 0 60px rgba(255,170,60,0.18) !important;
 }
 
-.moj-alert-title{
-    color:#ffd27a !important;
-    font-size:32px !important;
-    letter-spacing:2px;
-    text-shadow:0 0 18px rgba(255,180,70,0.45);
+.moj-alert-title {
+    color: #ffd27a !important;
+    font-size: 32px !important;
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px rgba(255,180,70,0.45);
 }
 
-.moj-alert-text{
-    color:#f1c98a !important;
-    font-size:18px !important;
-    line-height:1.8;
+.moj-alert-text {
+    color: #f1c98a !important;
+    font-size: 18px !important;
+    line-height: 1.8;
 }
 
-.moj-alert-gumb{
-    background:linear-gradient(45deg,#ffcc73,#c08b3c) !important;
-    color:#2b1408 !important;
-    border:none !important;
-    border-radius:16px !important;
-    padding:12px 30px !important;
-    font-size:18px !important;
-    font-weight:bold !important;
-    box-shadow:0 8px 25px rgba(255,170,60,0.35) !important;
+.moj-alert-gumb {
+    background: linear-gradient(45deg,#ffcc73,#c08b3c) !important;
+    color: #2b1408 !important;
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 12px 30px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    box-shadow: 0 8px 25px rgba(255,170,60,0.35) !important;
 }
 
-.moj-alert-gumb:hover{
-    transform:scale(1.03);
+.moj-alert-gumb:hover {
+    transform: scale(1.03);
 }
+
 @media (max-width: 900px) {
     .vrstica {
         flex-direction: column;

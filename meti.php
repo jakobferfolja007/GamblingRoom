@@ -36,8 +36,9 @@ $igralci = [$igralec1, $igralec2, $igralec3];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meti kock</title>
+    <title>Vrži svojo srečo</title>
     <link rel="stylesheet" href="css/styleM.css">
+    <link rel="icon" href="img/Kocke.ico" type="image/icon-x">
 </head>
 <body>
 
