@@ -54,32 +54,6 @@ Projekt uporablja:
 
 ---
 
-# 🚀 Zagon projekta
-
-## 1️⃣ Kloniraj projekt
-
-```bash
-git clone https://github.com/uporabnik/kockanje.git
-```
-
-## 2️⃣ Premakni projekt v localhost
-
-Primer za XAMPP:
-
-```bash
-htdocs/kockanje
-```
-
-## 3️⃣ Zaženi Apache
-
-Odpri:
-
-```bash
-http://localhost/kockanje
-```
-
----
-
 # 🖼️ Funkcionalnosti
 
 ## 🎲 Metanje kock
