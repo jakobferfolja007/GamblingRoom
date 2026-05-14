@@ -63,7 +63,7 @@ Projekt uporablja:
 
 ## 📊 Statistika
 - Število metov
-- Povprečja
+- Vsota metov
 - Rezultati igralcev
 
 ## 📱 Responsive
