@@ -23,7 +23,7 @@ class Particle {
         this.color = color;
 
         const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 6 + 2;
+        const speed = Math.random() * 20 + 2;
 
         this.velocity = {
             x: Math.cos(angle) * speed,
