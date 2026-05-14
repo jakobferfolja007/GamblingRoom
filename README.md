@@ -29,20 +29,6 @@ Aplikacija vsebuje:
 
 ---
 
-# 📂 Struktura projekta
-
-```bash
-📦 projekt
- ┣ 📜 index.php
- ┣ 📜 meti.php
- ┣ 📜 rezultati.php
- ┣ 📜 styleI.css
- ┣ 📜 styleM.css
- ┗ 📜 styleR.css
-```
-
----
-
 # 📄 Datoteke
 
 | Datoteka | Opis |
