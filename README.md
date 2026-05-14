@@ -1,96 +1,151 @@
-# Kockanje
+# 🎲 Kockanje – PHP Dice Game
 
-Preprosta PHP spletna igra za metanje kock, narejena v slovenščini. V igri sodelujejo trije igralci, uporabnik pa izbere število iger in število kock. Program nato izvede mete, sešteva rezultate in na koncu prikaže končno razvrstitev.
+<div align="center">
 
-## Opis projekta
+## ✨ Moderna spletna igra metanja kock ✨
 
-Projekt omogoča:
+Elegantna PHP aplikacija za simulacijo metanja kock z modernim UI dizajnom, animacijami in statistiko rezultatov.
 
-- vnos imen treh igralcev,
-- izbiro števila iger od 1 do 5,
-- izbiro števila kock od 1 do 3,
-- metanje kock za vsakega igralca,
-- prikaz rezultata posameznega meta,
-- sprotno seštevanje točk,
-- prikaz zmagovalca in končne lestvice,
-- samodejno vrnitev na začetno stran po prikazu rezultatov.
+</div>
 
-## Uporabljene tehnologije
+---
 
-- HTML
-- CSS
-- PHP
-- JavaScript
-- SweetAlert2
+# 📌 O projektu
 
-## Struktura projekta
+Projekt predstavlja interaktivno spletno aplikacijo za metanje kock, izdelano v:
 
-```text
-projekt/
-├── index.php
-├── meti.php
-├── rezultati.php
-└── css/
-    ├── styleI.css
-    ├── styleM.css
-    └── styleR.css
+- 🐘 **PHP**
+- 🎨 **CSS3**
+- 🌐 **HTML5**
+- ⚡ **JavaScript**
+
+Aplikacija vsebuje:
+
+✅ Animirane kocke  
+✅ Beleženje rezultatov  
+✅ Dinamičen uporabniški vmesnik  
+✅ Responsive design za telefone in računalnike  
+✅ Moderna gold/dark tema  
+
+---
+
+# 📂 Struktura projekta
+
+```bash
+📦 projekt
+ ┣ 📜 index.php
+ ┣ 📜 meti.php
+ ┣ 📜 rezultati.php
+ ┣ 📜 styleI.css
+ ┣ 📜 styleM.css
+ ┗ 📜 styleR.css
 ```
 
-## Datoteke
+---
 
-### `index.php`
+# 📄 Datoteke
 
-Začetna stran igre. Vsebuje obrazec, kjer uporabnik vnese imena treh igralcev, izbere število iger in število kock ter začne igro.
+| Datoteka | Opis |
+|---|---|
+| `index.php` | Glavna začetna stran aplikacije |
+| `meti.php` | Logika za izvajanje metov |
+| `rezultati.php` | Prikaz statistike in rezultatov |
+| `styleI.css` | Stil začetne strani |
+| `styleM.css` | Stil strani za mete |
+| `styleR.css` | Stil rezultatov |
 
-### `meti.php`
+---
 
-Glavni del igre. Skrbi za metanje kock, prikaz animiranih kock, izračun vsote posameznega meta in shranjevanje skupnih rezultatov v sejo.
+# 🎨 Dizajn
 
-### `rezultati.php`
+Projekt uporablja:
 
-Stran za prikaz končnih rezultatov. Rezultate razvrsti po številu točk, prikaže zmagovalca, drugo in tretje mesto ter po 15 sekundah uporabnika vrne na začetno stran.
+- 🌑 Temno premium ozadje
+- 🟡 Zlato-rjave poudarke
+- 💎 Glassmorphism efekt
+- 🎲 Animacije kock
+- 📱 Responsive layout
 
-### `styleI.css`
+---
 
-Oblikovanje začetne strani.
+# 🚀 Zagon projekta
 
-### `styleM.css`
+## 1️⃣ Kloniraj projekt
 
-Oblikovanje strani z meti kock.
+```bash
+git clone https://github.com/uporabnik/kockanje.git
+```
 
-### `styleR.css`
+## 2️⃣ Premakni projekt v localhost
 
-Oblikovanje strani z rezultati.
+Primer za XAMPP:
 
-## Kako zagnati projekt
-
-1. Projektno mapo postavi v mapo lokalnega strežnika, na primer:
-
-```text
+```bash
 htdocs/kockanje
 ```
 
-2. Prepričaj se, da so CSS datoteke v mapi `css`.
+## 3️⃣ Zaženi Apache
 
-3. Zaženi lokalni strežnik, na primer XAMPP ali Laragon.
+Odpri:
 
-4. V brskalniku odpri:
-
-```text
-http://localhost/kockanje/index.php
+```bash
+http://localhost/kockanje
 ```
 
-## Potek igre
+---
 
-1. Igralci vpišejo svoja imena.
-2. Izbere se število iger.
-3. Izbere se število kock.
-4. Klikne se gumb **Igraj**.
-5. Program prikaže mete za vsakega igralca.
-6. Če je več iger, se naslednji met izvede z gumbom **Vrži**.
-7. Po zadnjem metu se klikne **Rezultati**.
-8. Prikaže se končna lestvica.
+# 🖼️ Funkcionalnosti
 
-## Avtor
+## 🎲 Metanje kock
+- Naključni rezultati
+- Vizualni prikaz pik
+- Animacije ob metu
 
-Jakob Ferfolja
+## 📊 Statistika
+- Število metov
+- Povprečja
+- Rezultati igralcev
+
+## 📱 Responsive
+Aplikacija deluje na:
+- računalniku
+- tablici
+- telefonu
+
+---
+
+# 🛠️ Tehnologije
+
+<div align="center">
+
+| Frontend | Backend |
+|---|---|
+| HTML5 | PHP |
+| CSS3 | PHP Sessions |
+| JavaScript | |
+
+</div>
+
+---
+
+# 💡 Avtor
+
+Projekt izdelal: **Jakob Ferfolja**
+
+---
+
+# ⭐ Opombe
+
+Projekt je namenjen:
+- učenju PHP-ja
+- učenju CSS animacij
+- prikazu responsive dizajna
+- demonstraciji dela z naključnimi vrednostmi
+
+---
+
+<div align="center">
+
+## 🎲 Enjoy the Game 🎲
+
+</div>
